@@ -8,7 +8,7 @@ export const navItems = [
   { to: "contact", label: "Contact" },
 ];
 export const phoneNumber = "918287866581";
-export const emailId = "shreesaienterprises@gmail.com";
+export const emailId = "shreesaienterprises362@gmail.com";
 export const gstNo = "07ATOPJ8245P2ZS";
 export const address = "";
 export const openWhatsApp = (
