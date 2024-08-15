@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
-import { openWhatsApp } from "../../utils/constants";
+import { emailId, openWhatsApp } from "../../utils/constants";
 
 export default function Contact() {
   return (
@@ -15,11 +15,8 @@ export default function Contact() {
             <h1 className="font40 extraBold">Let's get in touch</h1>
             <p className="font13">
               Get in touch with us by filling the form given below or you can
-              reach to us at{" "}
-              <a href="mailto:naveenjain528@gmail.com">
-                naveenjain528@gmail.com
-              </a>
-              . We will get back to you at the earliest.
+              reach to us at <a href={`mailto:${emailId}`}>{emailId}</a>. We
+              will get back to you at the earliest.
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
@@ -70,7 +67,7 @@ export default function Contact() {
                 className="flexNullCenter flexColumn"
               >
                 <ContactImgBox>
-                  <a href="tel:+918929314014">
+                  <a href={`tel:${phoneNumber}`}>
                     <img
                       style={{ width: "180px", cursor: "pointer" }}
                       src={ContactImg1}
@@ -80,7 +77,7 @@ export default function Contact() {
                   </a>
                 </ContactImgBox>
                 <ContactImgBox>
-                  <a href="mailto:naveenjain528@gmail.com">
+                  <a href={`mailto:${emailId}`}>
                     <img
                       style={{
                         width: "280px",

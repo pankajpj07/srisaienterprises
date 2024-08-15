@@ -58,7 +58,7 @@ export default function Products() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Products</h1>
             <p className="font13">
-              Sri Sai Enterprises specializes in providing a comprehensive
+              Shree Sai Enterprises specializes in providing a comprehensive
               selection of premium plastic granules, catering to diverse
               industrial requirements. Our products are known for their
               exceptional quality, consistency, and performance, ensuring that

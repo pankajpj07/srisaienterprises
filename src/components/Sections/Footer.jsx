@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { companyName } from "../../utils/constants";
+import {
+  companyName,
+  emailId,
+  gstNo,
+  phoneNumber,
+} from "../../utils/constants";
 import LogoIcon from "../../assets/svg/Logo";
 
 const Section = styled.section`
@@ -113,8 +118,9 @@ const Footer = () => {
                 {companyName}
               </h1>
             </Link>
+            <Paragraph>GST No. - {gstNo}</Paragraph>
             <Paragraph>
-              Sri Sai Enterprises is a leading manufacturer and supplier of a
+              Shree Sai Enterprises is a leading manufacturer and supplier of a
               wide range of plastic granules and raw materials, rapidly growing
               in India.
             </Paragraph>
@@ -135,18 +141,17 @@ const Footer = () => {
             <List>
               <ListItem>
                 <Link title="">
-                  Bawana Industrial Area, Sector-3, Bawana, Delhi, India -
-                  110039
+                  E-297, Sector-2, Industrial Area, Bawana, Delhi, India-110039
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="tel:+918929314014" title="">
-                  +918929314014
+                <Link href={`tel:${phoneNumber}`} title="">
+                  +{phoneNumber}
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="mailto:naveenjain528@gmail.com" title="">
-                  naveenjain528@gmail.com
+                <Link href={`mailto:${emailId}`} title="">
+                  {emailId}
                 </Link>
               </ListItem>
             </List>
@@ -172,7 +177,7 @@ const Footer = () => {
               allowFullScreen=""
               aria-hidden="false"
               tabIndex="0"
-              title="Google Map of Sri Sai Enterprises"
+              title="Google Map of Shree Sai Enterprises"
             ></iframe>
           </Column>
         </Grid>

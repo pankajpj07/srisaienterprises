@@ -45,7 +45,7 @@ export default function Services() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Why We Are The Best?</h1>
             <p className="font13">
-              Sri Sai Enterprises stands out as a leader in granules
+              Shree Sai Enterprises stands out as a leader in granules
               manufacturing due to our unwavering commitment to quality,
               cutting-edge production techniques, and rigorous quality control
               processes. We ensure that each batch of granules meets the highest
